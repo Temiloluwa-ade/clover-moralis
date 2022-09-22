@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-width:340px;
+  min-height:100%;
+}
+
+@media screen and (max-width: 427px){
+  .flist{
+      grid-template-columns:repeat(auto-fill, minmax(140px, 1fr)) !important;
+  }
+}
+
+body *:not(i, svg){
+    font-family: Poppins;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body::-webkit-scrollbar,
+.cusscroller::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+body::-webkit-scrollbar-track,
+.cusscroller::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb,
+.cusscroller::-webkit-scrollbar-thumb {
+  background-color: rgb(219, 219, 219);
+  border-radius: 20px;
+}
+
+.sidebar .css-5xe99f-MuiLinearProgress-bar1{
+  background-color:#40A9FF !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
